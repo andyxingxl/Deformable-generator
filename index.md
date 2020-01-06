@@ -13,7 +13,11 @@ title: {{ site.name }}
 <a name="what_is"></a>
 
 # What is Deformable Generator?
-The deformable generator model is a deep generative model which disentangles the appearance and geometric information for both image and video data in purely unsupervised manner. The attributes of the visual data can be summarized as appearance (mainly including color, illumination, identity or category) and geometry (mainly including viewing angle and shape). The deformable generator model contains two generators, the appearance generator network models the appearance related information, while the geometric generator network produces the deformable fields (displacement of the coordinate of each pixel). The two generator networks are combined by the geometric related warping, such as rotation and stretching, to obtain the final image or video sequences. Two generators act upon independent latent factors to extract disentangled appearance and geometric information from image or video sequences (The nonlinear transition model is introduced to both the appearance and geometric generators to capture to dynamic information for the spatial-temporal process in the video sequences). 
+The deformable generator model is a deep generative model which disentangles the appearance and geometric information for both image and video data in purely unsupervised manner. The attributes of the visual data can be summarized as appearance (mainly including color, illumination, identity or category) and geometry (mainly including viewing angle and shape). 
+
+The deformable generator model contains two generators, the appearance generator network models the appearance related information, while the geometric generator network produces the deformable fields (displacement of the coordinate of each pixel). The two generator networks are combined by the geometric related warping, such as rotation and stretching, to obtain the final image or video sequences. 
+
+Two generators act upon independent latent factors to extract disentangled appearance and geometric information from image or video sequences (The nonlinear transition model is introduced to both the appearance and geometric generators to capture to dynamic information for the spatial-temporal process in the video sequences). 
 
 ![An illustration of the proposed model]({{ site.baseurl }}/fig/framwork1.png)
 
