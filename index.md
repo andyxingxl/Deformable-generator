@@ -46,8 +46,8 @@ $$
 
 <table>
   <tr>
-    <td><img src="{{ site.baseurl }}/video/anger.gif" width="20%"></td>
-    <td><img src="{{ site.baseurl }}/video/anger.gif" width="20%"></td>
+    <td><img src="{{ site.baseurl }}/video/anger.gif" width="400%"></td>
+    <td><img src="{{ site.baseurl }}/video/anger.gif" width="400%"></td>
   </tr>
 </table>
 
