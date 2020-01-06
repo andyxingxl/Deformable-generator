@@ -55,6 +55,16 @@ $$
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/video/id3and22.gif"></td>
+    <td><img src="{{ site.baseurl }}/video/id5and23.gif"></td>
+  </tr>
+  <tr>
+    <td><img src="{{ site.baseurl }}/video/id6and25.gif"></td>
+    <td><img src="{{ site.baseurl }}/video/id188and57.gif"></td>
+  </tr>
+</table>
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/andyxingxl/Deformable-generator/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
