@@ -16,7 +16,7 @@ title: {{ site.name }}
 
 # What is Deformable Generator?
 
-# Quick introduction to Deformable Generator
+![An illustration of the proposed model]({{ site.baseurl }}/fig/framework1.png)
 
 # Inference and learning
 
