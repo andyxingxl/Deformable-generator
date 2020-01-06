@@ -47,7 +47,11 @@ $$
 <table>
   <tr>
     <td><img src="{{ site.baseurl }}/video/anger.gif" width="400%"></td>
-    <td><img src="{{ site.baseurl }}/video/anger.gif" width="400%"></td>
+    <td><img src="{{ site.baseurl }}/video/disgust.gif" width="400%"></td>
+    <td><img src="{{ site.baseurl }}/video/fear.gif" width="400%"></td>
+    <td><img src="{{ site.baseurl }}/video/happy.gif" width="400%"></td>
+    <td><img src="{{ site.baseurl }}/video/sad.gif" width="400%"></td> 
+    <td><img src="{{ site.baseurl }}/video/suprise.gif" width="400%"></td>
   </tr>
 </table>
 
