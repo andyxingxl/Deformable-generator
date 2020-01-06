@@ -19,8 +19,16 @@ The deformable generator model contains two generators, the appearance generator
 
 Two generators act upon independent latent factors to extract disentangled appearance and geometric information from image or video sequences (The nonlinear transition model is introduced to both the appearance and geometric generators to capture to dynamic information for the spatial-temporal process in the video sequences). 
 
-![An illustration of the proposed model]({{ site.baseurl }}/fig/framwork1.png)
+![deformable generator model]({{ site.baseurl }}/fig/framwork1.png)
+<center><em>An illustration of the proposed model</em></center>
 
+The model can be expressed as
+$$
+  begin{eqnarray}
+    X &=&F(Z^a,Z^g; \theta)\\
+    &=& F_w(F_a(Z^a;\theta_a),F_g(Z^g;\theta_g)) + \epsilon
+  \end{eqnarray}
+$$
 # Inference and learning
 
 # Experimental results
