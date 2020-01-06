@@ -25,11 +25,10 @@ Two generators act upon independent latent factors to extract disentangled appea
 The model can be expressed as
 $$
   \begin{split}
-    X &=&F(Z^a,Z^g; \theta)\\
-    &=& F_w(F_a(Z^a;\theta_a),F_g(Z^g;\theta_g)) + \epsilon
+    X &= F(Z^a,Z^g; \theta)\\
+    &= F_w(F_a(Z^a;\theta_a),F_g(Z^g;\theta_g)) + \epsilon
   \end{split}
 $$
-# Inference and learning
 
 # Experimental results
 
