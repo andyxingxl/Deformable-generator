@@ -32,7 +32,16 @@ $$
 
 # Experimental results
 
-
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/fig/appbasis.png"></td>
+    <td><img src="{{ site.baseurl }}/fig/geobasis.png"></td>
+  </tr>
+  <tr>
+    <td><center>Typical appearance basis functions</center></td>
+    <td><center>Representive geometric basis functions</center></td>
+  </tr>
+</table>
 
 
 
