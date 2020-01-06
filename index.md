@@ -44,7 +44,12 @@ $$
 </table>
 
 
-
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/video/anger.gif"></td>
+    <td><img src="{{ site.baseurl }}/video/anger.gif"></td>
+  </tr>
+</table>
 
 ## Welcome to GitHub Pages
 
