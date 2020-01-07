@@ -87,7 +87,7 @@ $$
     <td><center> geometric interpolation results of cat and monkey
 faces after applying the rotation and shape warping learned from CelebA.</center></td>
     <td><center> geometric interpolation results of the model
-learned from _car_ category of CIFAR-10 dataset.</center></td>
+learned from *car* category of CIFAR-10 dataset.</center></td>
   </tr>
 </table>
 <table>
