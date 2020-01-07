@@ -44,7 +44,7 @@ $$
 
 <table>
   <tr>
-    <td><center><img src="{{ site.baseurl }}/fig/geobasis1.gif"></center></td>
+    <td><center><img src="{{ site.baseurl }}/fig/geobasis.gif"></center></td>
     <td><img src="{{ site.baseurl }}/fig/geobasis.png" width="150%" height="%150"></td>
   </tr>
   <tr>
