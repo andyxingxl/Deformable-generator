@@ -7,7 +7,6 @@ title: {{ site.name }}
 # Table of contents
 * [What is Deformable Generator?](#what_is)
 * [Experimental results](#experimental_results) 
-* [Conclusion](#conclusion)
 ---
 
 <a name="what_is"></a>
