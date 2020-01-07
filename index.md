@@ -43,6 +43,27 @@ $$
   </tr>
 </table>
 
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/fig/rotation.png"></td>
+    <td><img src="{{ site.baseurl }}/fig/sharpwarp.png"></td>
+  </tr>
+  <tr>
+    <td><center> Rotation warping to the apearance basis functions</center></td>
+    <td><center>Shape warping to the apearance basis functions</center></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/fig/transferex.png"></td>
+    <td><img src="{{ site.baseurl }}/fig/transfergreycolor.png"></td>
+  </tr>
+  <tr>
+    <td><center> Transferring and recombining geometric and appearance vectors</center></td>
+    <td><center>Transferring the learned expression from the gray dataset to the face images in the color Multi-PIE dataset.</center></td>
+  </tr>
+</table>
 
 <table>
   <tr>
