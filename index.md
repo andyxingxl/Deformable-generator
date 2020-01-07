@@ -92,6 +92,17 @@ $$
 
 <table>
   <tr>
+    <td><center><img src="{{ site.baseurl }}/fig/mnistallview.gif"></center></td>
+    <td><center><img src="{{ site.baseurl }}/fig/mnistallshape.png"></center></td>
+  </tr>
+  <tr>
+    <td><center> Geometric basis functions of viewing angles</center></td>
+    <td><center> Geometric basis functions of shapes.</center></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
     <td><img src="{{ site.baseurl }}/video/anger.gif" width="400%"></td>
     <td><img src="{{ site.baseurl }}/video/disgust.gif" width="400%"></td>
     <td><img src="{{ site.baseurl }}/video/fear.gif" width="400%"></td>
