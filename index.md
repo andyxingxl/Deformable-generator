@@ -34,11 +34,20 @@ $$
 
 <table>
   <tr>
+    <td><img src="{{ site.baseurl }}/fig/appbasis.gif"></td>
     <td><img src="{{ site.baseurl }}/fig/appbasis.png"></td>
-    <td><img src="{{ site.baseurl }}/fig/geobasis.png"></td>
   </tr>
   <tr>
     <td><center>Typical appearance basis functions</center></td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/fig/geobasis.gif"></td>
+    <td><img src="{{ site.baseurl }}/fig/geobasis.png"></td>
+  </tr>
+  <tr>
     <td><center>Representive geometric basis functions</center></td>
   </tr>
 </table>
