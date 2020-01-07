@@ -74,6 +74,22 @@ $$
   </tr>
 </table>
 
+
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/video/0f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/video/1f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/video/2f.gif"></td>
+    <td><img src="{{ site.baseurl }}/video/3f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/video/4f.gif" ></td> 
+    <td><img src="{{ site.baseurl }}/video/5f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/video/6f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/video/7f.gif"></td>
+    <td><img src="{{ site.baseurl }}/video/8f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/video/9f.gif" ></td> 
+  </tr>
+</table>
+
 <table>
   <tr>
     <td><img src="{{ site.baseurl }}/video/anger.gif" width="400%"></td>
