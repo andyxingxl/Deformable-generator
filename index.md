@@ -57,7 +57,7 @@ $$
 <table>
   <tr>
     <td><img src="{{ site.baseurl }}/fig/transferex.gif"></td>
-    <td><img src="{{ site.baseurl }}/fig/transfergreycolor.png"></td>
+    <td><img src="{{ site.baseurl }}/fig/transfergreycolor.png"  width="70%" height="70"></td>
   </tr>
   <tr>
     <td><center> Transferring and recombining geometric and appearance vectors</center></td>
