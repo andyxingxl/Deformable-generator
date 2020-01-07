@@ -22,7 +22,20 @@ Two generators act upon independent latent factors to extract disentangled appea
 
 <center><img src="{{ site.baseurl }}/fig/framwork1.png" width="80%"></center>
 <center><em>An illustration of the proposed model</em></center>
-
+<table>
+  <tr>
+    <td><img src="{{ site.baseurl }}/fig/0f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/fig/1f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/fig/2f.gif"></td>
+    <td><img src="{{ site.baseurl }}/fig/3f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/fig/4f.gif" ></td> 
+    <td><img src="{{ site.baseurl }}/fig/5f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/fig/6f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/fig/7f.gif"></td>
+    <td><img src="{{ site.baseurl }}/fig/8f.gif" ></td>
+    <td><img src="{{ site.baseurl }}/fig/9f.gif" ></td> 
+  </tr>
+</table>
 The model can be expressed as
 $$
   \begin{split}
