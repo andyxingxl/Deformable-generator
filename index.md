@@ -34,7 +34,7 @@ $$
 
 <table>
   <tr>
-    <td><img src="{{ site.baseurl }}/fig/appbasis.gif"></td>
+    <td><center><img src="{{ site.baseurl }}/fig/appbasis.gif"></center></td>
     <td><img src="{{ site.baseurl }}/fig/appbasis.png"></td>
   </tr>
   <tr>
@@ -44,7 +44,7 @@ $$
 
 <table>
   <tr>
-    <td><img src="{{ site.baseurl }}/fig/geobasis.gif"></td>
+    <td><center><img src="{{ site.baseurl }}/fig/geobasis.gif"></center></td>
     <td><img src="{{ site.baseurl }}/fig/geobasis.png"></td>
   </tr>
   <tr>
