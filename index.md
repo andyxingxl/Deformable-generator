@@ -34,8 +34,8 @@ $$
 
 <table>
   <tr>
-    <td><center><img src="{{ site.baseurl }}/fig/appbasis1.gif"></center></td>
-    <td><img src="{{ site.baseurl }}/fig/appbasis.png"  width="150%" height="%150"></td>
+    <td><center><img src="{{ site.baseurl }}/fig/appbasis0.gif"></center></td>
+    <td><img src="{{ site.baseurl }}/fig/appbasis.png" ></td>
   </tr>
   <tr>
     <td><center>Typical appearance basis functions</center></td>
@@ -44,8 +44,8 @@ $$
 
 <table>
   <tr>
-    <td><center><img src="{{ site.baseurl }}/fig/geobasis.gif"></center></td>
-    <td><img src="{{ site.baseurl }}/fig/geobasis.png" width="150%" height="%150"></td>
+    <td><center><img src="{{ site.baseurl }}/fig/geobasis0.gif"></center></td>
+    <td><img src="{{ site.baseurl }}/fig/geobasis.png" ></td>
   </tr>
   <tr>
     <td><center>Representive geometric basis functions</center></td>
