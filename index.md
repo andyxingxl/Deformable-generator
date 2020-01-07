@@ -64,6 +64,9 @@ $$
   </tr>
 </table>
 
+![Unsupervised landmark localization]({{ site.baseurl }}/fig/oridefgridcanoldmk.png)
+<center><em>Unsupervised landmark localization</em></center>
+
 <table>
   <tr>
     <td><img src="{{ site.baseurl }}/fig/transferex.gif"></td>
