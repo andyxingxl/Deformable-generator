@@ -35,7 +35,7 @@ $$
 <table>
   <tr>
     <td><center><img src="{{ site.baseurl }}/fig/appbasis.gif"></center></td>
-    <td><img src="{{ site.baseurl }}/fig/appbasis.png"></td>
+    <td><img src="{{ site.baseurl }}/fig/appbasis.png"  width="130%" height="%130"></td>
   </tr>
   <tr>
     <td><center>Typical appearance basis functions</center></td>
@@ -45,7 +45,7 @@ $$
 <table>
   <tr>
     <td><center><img src="{{ site.baseurl }}/fig/geobasis.gif"></center></td>
-    <td><img src="{{ site.baseurl }}/fig/geobasis.png"></td>
+    <td><img src="{{ site.baseurl }}/fig/geobasis.png" width="130%" height="%130"></td>
   </tr>
   <tr>
     <td><center>Representive geometric basis functions</center></td>
@@ -66,7 +66,7 @@ $$
 <table>
   <tr>
     <td><img src="{{ site.baseurl }}/fig/transferex.gif"></td>
-    <td><img src="{{ site.baseurl }}/fig/transfergreycolor.png"  width="70%" height="70"></td>
+    <td><img src="{{ site.baseurl }}/fig/transfergreycolor.png"  width="70%" height="%70"></td>
   </tr>
   <tr>
     <td><center> Transferring and recombining geometric and appearance vectors</center></td>
