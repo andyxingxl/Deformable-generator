@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
 # Setup
 title:       Deformable Generator Network-- Unsupervised Disentanglement of Appearance and Geometry
 baseurl:      "/Deformable-generator"
