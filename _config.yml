@@ -1,1 +1,12 @@
 theme: jekyll-theme-cayman
+# Setup
+title:       Deformable Generator Network: Unsupervised Disentanglement of Appearance and Geometry
+baseurl:      "/Deformable-generator"
+
+# About/contact
+author:
+  name:       Xianglei Xing
+  url:        https://github.com/andyxingxl
+
+#Others
+markdown: kramdown
