@@ -78,7 +78,18 @@ $$
   </tr>
 </table>
 
-
+<table>
+  <tr>
+    <td><center><img src="{{ site.baseurl }}/fig/animal.png"></center></td>
+    <td><center><img src="{{ site.baseurl }}/fig/car.png"></center></td>
+  </tr>
+  <tr>
+    <td><center> geometric interpolation results of cat and monkey
+faces after applying the rotation and shape warping learned from CelebA.</center></td>
+    <td><center> geometric interpolation results of the model
+learned from _car_ category of CIFAR-10 dataset.</center></td>
+  </tr>
+</table>
 <table>
   <tr>
     <td><img src="{{ site.baseurl }}/fig/0f.gif" ></td>
