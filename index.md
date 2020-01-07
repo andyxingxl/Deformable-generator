@@ -56,7 +56,7 @@ $$
 
 <table>
   <tr>
-    <td><img src="{{ site.baseurl }}/fig/transferex.png" width="150%"></td>
+    <td><img src="{{ site.baseurl }}/fig/transferex.gif"></td>
     <td><img src="{{ site.baseurl }}/fig/transfergreycolor.png"></td>
   </tr>
   <tr>
