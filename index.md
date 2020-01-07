@@ -93,7 +93,7 @@ $$
 
 <table>
   <tr>
-    <td><center><img src="{{ site.baseurl }}/fig/mnistallview.gif"></center></td>
+    <td><center><img src="{{ site.baseurl }}/fig/mnistallview.png"></center></td>
     <td><center><img src="{{ site.baseurl }}/fig/mnistallshape.png"></center></td>
   </tr>
   <tr>
