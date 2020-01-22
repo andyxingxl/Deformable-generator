@@ -9,7 +9,24 @@
 import matplotlib.pyplot as plt
 import subprocess
 import matplotlib.gridspec as gridspec
+import tensorflow as tf
 
+def read_and_decode(filename,shape):
+      tfrecord_file_queue = tf.train.string_input_producer(filename, name='queue')
+      reader = tf.TFRecordReader()
+      _, tfrecord_serialized = reader.read(tfrecord_file_queue)
+      tfrecord_features = tf.parse_single_example(tfrecord_serialized,
+                        features={
+                            'label': tf.FixedLenFeature([], tf.int64),
+                            'image': tf.FixedLenFeature([], tf.string),
+                        }, name='features')
+      image = tf.decode_raw(tfrecord_features['image'], tf.uint8)
+      image = tf.reshape(image, shape)
+      image = tf.cast(image, tf.float32) * (1. / 255)
+      label = tfrecord_features['label']
+      label = tf.cast(label, tf.int32)    
+      return  image, label
+  
 def imnormalzo(image):
     immin=(image).min()
     immax=(image).max()
@@ -34,7 +51,7 @@ def saveasimagesandvideo(samples,out_dir,ffmpeg_loglevel='quiet', fps=5):
     '''
 
 def plotimgs(samples,Nh,Nc,IMG_HEIGHT,IMG_WIDTH,channel):
-    fig = plt.figure(figsize=(10, 4))
+    fig = plt.figure(figsize=(Nc, Nh))
     gs = gridspec.GridSpec(Nh, Nc)
     gs.update(wspace=0.01, hspace=0.01)
 

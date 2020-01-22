@@ -1,13 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-
-
-@author: andy
-"""
 import tensorflow as tf
+import numpy as np
 
-
+'''
+Geometric warping
+'''
 def _meshgrid(height, width,nb):
         with tf.variable_scope('mymeshgrid'):
             # This should be equivalent to:
@@ -125,3 +121,45 @@ def warpnn(im,dlm,nb):
      Yhat = tf.reshape(
                 input_transformed, tf.stack([nb, imgsize, imgsize, nc]))
      return Yhat
+
+'''
+ Basic operations in the networks
+'''
+def get_weight(shape, gain=np.sqrt(2), use_wscale=True,lmda=1., fan_in=None):
+    if fan_in is None:
+        fan_in = np.prod(shape[:-1])
+    #print( "current", shape[:-1], fan_in)
+    std = gain / np.sqrt(fan_in) # He init
+    std1= 0.1 # balance init
+    if use_wscale:
+        wscale = tf.constant(np.float32(std), name='wscale')
+        return tf.get_variable('weight', shape=shape, initializer=tf.initializers.random_normal()) * wscale * lmda
+    else:
+        return tf.get_variable('weight', shape=shape, initializer=tf.initializers.truncated_normal(stddev=std1))
+
+# Fully-connected layer.
+def dense(x, fmaps, gain=np.sqrt(2), use_wscale=True,lmda=1.,name='fc'):
+  with tf.variable_scope(name):
+    if len(x.shape) > 2:
+        x = tf.reshape(x, [-1, np.prod([d.value for d in x.shape[1:]])])
+    w = get_weight([x.shape[1].value, fmaps], gain=gain, use_wscale=use_wscale,lmda=lmda)
+    w = tf.cast(w, x.dtype)
+    bias = tf.get_variable("bias", [fmaps], initializer=tf.initializers.truncated_normal(stddev=0.1))
+    return tf.matmul(x, w)+ bias
+
+
+def deconv2d(x, fmaps,k=3, s=2, gain=np.sqrt(2), use_wscale=True, lmda=1.,padding='SAME', name="deconv2d"):
+    with tf.variable_scope(name):
+        w = get_weight([k, k, x.shape[-1].value,fmaps], gain=gain, use_wscale=use_wscale,lmda=lmda)
+        w = tf.cast(w, x.dtype)
+        w = tf.transpose(w,[0,1,3,2])
+        if s == 2:
+            output_shape = [tf.shape(x)[0],s*x.shape[1].value,s*x.shape[2].value,fmaps]  
+        else: 
+            output_shape = [tf.shape(x)[0],s,s,fmaps] 
+        conv = tf.nn.conv2d_transpose(x, filter=w, output_shape=output_shape, strides=[1, s, s, 1], padding=padding)
+        biases = tf.get_variable('biases', [fmaps], initializer=tf.initializers.truncated_normal(stddev=0.1))
+        conv = tf.nn.bias_add(conv, biases)      
+        return conv
+
+
