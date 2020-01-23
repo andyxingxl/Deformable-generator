@@ -47,7 +47,7 @@ if __name__ == '__main__':
     chb = args.chb
     fmd = args.fmd
     netstruct = importlib.import_module('netstructs'+ '.' + args.netst)
-    seed = 7;np.random.seed(seed);tf.set_random_seed(seed)
+    seed = 1;np.random.seed(seed);tf.set_random_seed(seed)
     App_net =  netstruct.app_net(za_dim=args.zad,nchan=nchan,imgsize=imgsize,batchsize=batchsz,
             kersize=kersize,chb=chb,alpha=args.alpha,fmd=fmd)
     Geo_net =  netstruct.geo_net(zg_dim=args.zgd,nchan=nchan,imgsize=imgsize,batchsize=batchsz,

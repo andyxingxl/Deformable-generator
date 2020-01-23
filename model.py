@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan 22 17:31:09 2020
+
+@author: andy
+"""
+
 from utils.operations import warpnn
 import numpy as np
 import os
@@ -166,46 +174,30 @@ class DeformGenerator(object):
             os.makedirs(evalpath)
         npica=int(self.za_dim/10)
         npicg=int(self.zg_dim/10)
-        Yappball=np.zeros((npica,self.batchsz,self.imgsize, self.imgsize, self.nchan))
-        Ygeoball=np.zeros((npicg,self.batchsz,self.imgsize, self.imgsize, self.nchan))
+       
         '''
-        (1) Plot the typical appearance basis functions
+        (1) Plot the appearance basis functions
         '''
         for pic in range(npica):
             zgeop=np.zeros((self.batchsz, self.zg_dim))   
             zappp=np.zeros((self.batchsz, self.za_dim))
             for d in range(10):
                 zappp[d*10:d*10+10,pic*10+d]=np.linspace(-10,10,10)      
-            samples = self.sess.run(self.gy,feed_dict={self.zapp: zappp,self.zgeo:zgeop})
-            Yappball[pic]=samples        
-        Yappball=np.reshape(Yappball,[-1,10,self.imgsize, self.imgsize, self.nchan])
-        tabsis=[]
-        taidlist=[25,57,12,41]
-        for tid in range(len(taidlist)):
-            ids=taidlist[tid]
-            tabsis.append(Yappball[ids])
-        tabsis=np.concatenate(tabsis,0)
-        self.plot(tabsis,10,1000,save_dirs['eval_dir'],'appbasis')
+            samples = self.sess.run(self.gy,feed_dict={self.zapp: zappp,self.zgeo:zgeop})           
+            self.plot(samples,10,pic,save_dirs['eval_dir'],'appbasis')
+      
         '''
-        (2) Plot the typical geometric basis functions
+        (2) Plot the geometric basis functions
         '''
         zappp =np.zeros((self.batchsz, self.za_dim))
-        zappp[:,7]=np.zeros((self.batchsz)) + 8
+        zappp[:,1]=np.zeros((self.batchsz)) - 8
         for pic in range(npicg):
             zgeop=np.zeros((self.batchsz, self.zg_dim))   
             for d in range(10):
                 zgeop[d*10:d*10+10,pic*10+d]=np.linspace(-8,8,10)      
             samples = self.sess.run(self.gy,feed_dict={self.zapp: zappp,self.zgeo:zgeop})
-            Ygeoball[pic]=samples 
-        Ygeoball=np.reshape(Ygeoball,[-1,10,self.imgsize, self.imgsize, self.nchan])
-        tgbsis=[]
-        tgidlist=[7,17,19,4]
-        for tid in range(len(tgidlist)):
-            ids=tgidlist[tid]
-            tgbsis.append(Ygeoball[ids])
-        tgbsis=np.concatenate(tgbsis,0)
-        self.plot(tgbsis,10,1000,save_dirs['eval_dir'],'geobasis')
-       
+            self.plot(samples,10,pic,save_dirs['eval_dir'],'geobasis')
+           
      
 
 
